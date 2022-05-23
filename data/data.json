@@ -1,0 +1,13 @@
+[
+{"posx": 450, "posy": 500, "pallone": 50, "cesto":10, "colore": 0},
+{"posx": 55, "posy": 330, "pallone": 15, "cesto":50, "colore": 10},
+{"posx": 300, "posy": 45, "pallone": 10, "cesto":10, "colore": 20},
+{"posx": 0, "posy": 0, "pallone": 25, "cesto":20, "colore": 30},
+{"posx": 0, "posy": 470, "pallone": 30, "cesto":40, "colore": 4},
+{"posx": 350, "posy": 170, "pallone": 60, "cesto":35, "colore": 5},
+{"posx": 250, "posy": 390, "pallone": 20, "cesto":10, "colore": 600},
+{"posx": 660, "posy": 270, "pallone": 15, "cesto":8, "colore": 700},
+{"posx": 150, "posy": 90, "pallone": 50, "cesto":25, "colore": 80},
+{"posx": 650, "posy": 0, "pallone": 75, "cesto":5, "colore": 90}
+
+]

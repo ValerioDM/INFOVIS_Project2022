@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hot air ballon</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="lib/d3.v6.min.js"></script>
+
+</head>
+<body>
+
+    <div>
+        <h1 id="title">INFOVIS: Progetto individuale</h1>
+        <h2 id="desc"> OBIETTIVO:
+            Creare un file json con dei dati multivariati: ci sono 10 data-cases e ogni data-case ha cinque variabili quantitative i cui valori sono tutti positivi. In base a questi dati disegna 10 mongolfiere nell'area di disegno (basta la silhouette, ogni mongolfiera corrisponde ad un data-case). La prima variabile determina la posizione orizzontale della mongolfiera, la seconda variabile la posizione verticale, la terza variabile la grandezza del pallone della mongolfiera, la quarta variabile la grandezza del cesto della mongolfiera, e la quinta variabile il colore della mongolfiera. Facendo click con il pulsante sinistro su una mongolfiera questa diventa bianca (un colore non utilizzato). Facendo click su una seconda mongolfiera le due mongolfiere si scambiano le variabili con l'eccezione delle variabili uno e due usate per la posizione e della variabile cinque usata per il colore. Fai in modo che i cambi di dimensioni delle mongolfiere avvengano con un'animazione fluida. Usa le scale d3.js per mappare l'intervallo dei valori delle variabili (che è arbitrario) sull'intervallo dei valori delle coordinate, che dipende dalla tua interfaccia.
+            </h2>
+    </div>
+
+    <div class = "vertical"></div>
+    
+    <!--svg width="100%"  height="100%" id="container"></svg-->
+    <!--svg id="svgOne" xmlns="http://www.w3.org/2000/svg" width="5000" height="3000"></svg-->
+    <div id = "graph"></div>
+    <!--script src="js/draw.js"></script-->
+    <script src="js/draw.js"></script>
+
+    <div>
+        <h3 id="desc"> DESCRIZIONE: Il progetto è realizzato in due modi. A sinitra lo scaler è statico: Lo scaler è adattato non sulle coordinate massime su cui una figura può trovarsi ma sulla coordinata massima che quella figura può coprire(Con il pallone o con il cesto) Questa modalità permette di conservare nello spazio le posizioni delle mongolfiere. Nel caso fosse piu importante il rapporto tra le figure, nel riquadro di destra lo scaler si adatta dinamicamente al variare delle dimensioni delle mongolfiere agli estremi, ridimensionando(se necessario) anche le altre figure. Si nota dunque che nel caso in cui si vadano a modificare le mongolfiere "interne" i due riquadri avranno lo stesso comportamento.>
+        </h3>
+        <h4 id="desc"> CONSIDERAZIONI: Il progetto soddisfa la richiesta iniziale ma pecca in alcune scelte stilistiche per via della poca (quasi nulla) esperienza nella programmazione di pagine web. Le siluette hanno centro nel punto in cui il cesto ed il pallone e si incontrano, dunque se il raggio del pallone o il lato del cesto dovessero essere troppo grandi le figure potrebbero uscire dallo schermo verso sinistra o verso il basso(le direzioni che gli scaler non coprono). Provando ad estendere il dominio degli scaler per visualizzare la coordinata 0,0 piu verso il centro del riquadro risultava in modifiche non attese alle dmensioni stesse delle mongolfiere. È stato deciso di non effettuare ulteriori ricerche nella soluzione per evitare di rendere il progetto troppo complesso per questioni estetiche e non esplicitamente legate alla consegna. Anche le linee di separazione tra i pannelli sono molto sporche ma per lo meno sono legate ai pannelli dunque non perdono la loro posizione modificando la grandezza della pagina. Le stesse linee non formano un box chiuso per lo stesso motivo sopra citato, la grandezza dei palloni o dei cesti (con eventuali nuovi data cases) potrebbe eccedere i limiti ed uscire rigidamente dal box >
+        </h4>
+    </div>
+    
+</body>
+</html>
